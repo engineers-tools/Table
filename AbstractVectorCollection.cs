@@ -1,15 +1,15 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
-using BYOS.Interfaces;
+using Interfaces;
 
-namespace BYOS.Table
+namespace EngineersTools
 {
     public abstract class AbstractVectorCollection : ObservableCollection<IVector>
     {
         private string _DefaultPrefix = " ";
-        public string DefaultPrefix 
-        { 
+        public string DefaultPrefix
+        {
             get { return _DefaultPrefix; }
             set { _DefaultPrefix = value; }
         }

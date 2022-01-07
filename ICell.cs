@@ -1,4 +1,4 @@
-﻿namespace BYOS.Interfaces
+﻿namespace Interfaces
 {
     public interface ICell
     {

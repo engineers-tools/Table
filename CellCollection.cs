@@ -2,7 +2,7 @@ using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Linq;
 
-namespace BYOS.Table
+namespace EngineersTools
 {
     public class CellCollection : ReadOnlyObservableCollection<Cell>
     {
@@ -44,13 +44,13 @@ namespace BYOS.Table
         {
             get
             {
-                return _GetCell(row,column)?.Value;
+                return _GetCell(row, column)?.Value;
             }
 
             set
             {
                 var cell = _GetCell(row, column);
-                if(cell == null)
+                if (cell == null)
                 {
                     cell = new Cell() { Row = row, Column = column, Value = value };
                     _Cells.Add(cell);
@@ -77,4 +77,4 @@ namespace BYOS.Table
             return _Cells.Where(c => c.Row == row && c.Column == column).FirstOrDefault();
         }
     }
-} 
+}

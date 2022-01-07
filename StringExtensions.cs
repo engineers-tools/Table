@@ -1,4 +1,4 @@
-namespace  BYOS.Extensions
+namespace Extensions
 {
     public static class StringExtensions
     {

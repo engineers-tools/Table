@@ -1,15 +1,15 @@
 using System;
-using BYOS.Interfaces;
+using Interfaces;
 
-namespace BYOS.Table
+namespace EngineersTools
 {
-    public class Row : IVector
+    public class Column : IVector
     {
         public string Header { get; set; }
         public int Position { get; set; }
 
-        public Row() { }
-        public Row(string header)
+        public Column() { }
+        public Column(string header)
         {
             Header = header;
         }

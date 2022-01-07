@@ -1,11 +1,11 @@
-using BYOS.Interfaces;
-using BYOS.Extensions;
+using Interfaces;
+using Extensions;
 using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace BYOS.Table
+namespace EngineersTools
 {
     public class Table : ITable
     {
@@ -72,7 +72,7 @@ namespace BYOS.Table
             {
                 foreach (Row row in e.NewItems)
                 {
-                    _Cells.DeleteRow(row.Position);    
+                    _Cells.DeleteRow(row.Position);
                 }
             }
         }
@@ -103,7 +103,7 @@ namespace BYOS.Table
             {
                 foreach (Column column in e.NewItems)
                 {
-                    _Cells.DeleteColumn(column.Position);    
+                    _Cells.DeleteColumn(column.Position);
                 }
             }
         }

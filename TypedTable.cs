@@ -4,12 +4,12 @@ using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
-using BYOS.Extensions;
+using Extensions;
 using Newtonsoft.Json;
-using BYOS.Table;
-using BYOS.Interfaces;
+using EngineersTools;
+using Interfaces;
 
-namespace BYOS.TypedTable
+namespace TypedTable
 {
     public class Table<T> : ITable
     {
@@ -303,7 +303,7 @@ namespace BYOS.TypedTable
 
         #region Cells
 
-        private ObservableCollection<Cell<T>> _Cells;
+        private ObservableCollection<Cell<T>>? _Cells;
         private ReadOnlyObservableCollection<Cell<T>> _ROCells;
         public ReadOnlyObservableCollection<Cell<T>> Cells
         {
@@ -416,7 +416,7 @@ namespace BYOS.TypedTable
                     break;
             }
         }
-        public void BuildRow(IEnumerable<T> values, string header = null)
+        public void BuildRow(IEnumerable<T> values, string? header = null)
         {
             Row row = null;
             int rowNumber = 0;
