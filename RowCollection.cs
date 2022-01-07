@@ -1,4 +1,4 @@
-namespace BYOS.Table
+namespace EngineersTools
 {
     public class RowCollection : AbstractVectorCollection
     {

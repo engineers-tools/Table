@@ -1,6 +1,6 @@
-using BYOS.Interfaces;
+using Interfaces;
 
-namespace BYOS.Table
+namespace EngineersTools
 {
     public class Cell<T> : ICell
     {
